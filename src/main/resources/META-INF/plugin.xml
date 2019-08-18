@@ -63,6 +63,7 @@
   </extensionPoints>
 
   <extensions defaultExtensionNs="net.ashald.envfile">
+    <envVarsProvider id="direnv" factory="net.ashald.envfile.providers.direnv.DirEnvProviderFactory"/>
     <envVarsProvider id="env" factory="net.ashald.envfile.providers.dotenv.DotEnvFileParserFactory"/>
     <envVarsProvider id="yaml" factory="net.ashald.envfile.providers.yaml.YamlEnvFileParserFactory"/>
     <envVarsProvider id="runconfig" factory="net.ashald.envfile.providers.runconfig.RunConfigEnvVarsProviderFactory"/>
